@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+</head>
+<body>
+  <p class="print"></p>
+  <p>
+    <button onclick="
+      calculate('1');  
+    ">1</button>
+    <button onclick="
+      calculate('2');
+    ">2</button>
+    <button onclick="
+      calculate('3');
+    ">3</button>
+    <button onclick="
+      calculate(' + ');
+    " class="op">+</button>
+  </p>
+  <p>
+    <button onclick="
+      calculate('4');
+    ">4</button>
+    <button onclick="
+      calculate('5');
+    ">5</button>
+    <button onclick="
+      calculate('6');
+    ">6</button>
+    <button onclick="
+      calculate(' - ');
+    " class="op">-</button>
+  </p>
+  <p>
+    <button onclick="
+      calculate('7');  
+    ">7</button>
+    <button onclick="
+      calculate('8');
+    ">8</button>
+    <button onclick="
+      calculate('9');
+    ">9</button>
+    <button onclick="
+      calculate(' * ');
+    " class="op">*</button>
+  </p>
+  <p>
+    <button onclick="
+      calculate('0'); 
+    ">0</button>
+    <button onclick="
+      calculate('.')
+    ">.</button>
+    <button onclick="
+      calculate('=');
+    ">=</button>
+    <button onclick="
+      calculate(' / ');
+    " class="op">/</button>
+  </p>
+  <p>
+    <button onclick="
+      calculator='';
+      document.querySelector('.print').innerHTML=``;
+      localStorage.removeItem('calculator')
+    " id="clea">clear</button>
+  </p>
+</body>
+<script src="code.js"></script>
+</html>
